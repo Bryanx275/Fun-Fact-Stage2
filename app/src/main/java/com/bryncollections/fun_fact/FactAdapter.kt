@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 
-class FactAdapter(context: Context,facts: List<FactModel>):ArrayAdapter<FactModel>(context, resource = 0, facts) {
+class FactAdapter(context: Context,facts: List<FactModel>):ArrayAdapter<FactModel>(context,0, facts) {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var view = convertView
         val fact = getItem(position)
